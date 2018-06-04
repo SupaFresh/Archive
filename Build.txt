@@ -1,0 +1,70 @@
+# How to Build SkyEditor.ROMEditor
+
+## Requirements
+* Visual Studio 2017
+* .Net Framework 4.6.2
+
+## Instructions
+**1.** Download(or clone or fork or something) SkyEditor.ROMEditor
+
+**2.** Locate SkyEditor.ROMEditor.sln in the SkyEditor.ROMEditor Folder
+
+**3.** Open SkyEditor.ROMEditor.sln in Visual Studio
+
+**4.** Build the Solution [!NOTE! You will get a bunch of errors and will probably
+   a message stating that the build failed. That is normal and will be fixed in
+   the following steps]
+
+**5.** Click (Not Double-Click) on  SkyEditor.ROMEditor.sln in the Solution Explorer
+
+**6.** In the top tabs go to [Tools/NuGet Package Manager/Manage NuGet Packages For Solution]
+
+**7.** When NuGet Package Manager pops up there may be a yellow tab at the top
+  of the package manager stating that several packages failed to load or
+  could not be found or whatnot. If so click the restore button inside the
+  yellow tab. You will probably get a bunch of errors. This is normal and 
+  will be resolved in the following steps.
+
+**8.** In the top right of the NuGet Package Manager there will be a area that
+  will say "Package Source" a drop down menu beside it that will allow you
+  choose the package source. Click the gear(settings) icon next to the drop
+  down menu
+
+**9.** A options window will pop up. Click the green plus sign to add a new source.
+
+**10.** Give the Package Source a new name and in the source box delete the text and
+   replace it with the following URL
+   [https://www.myget.org/F/skyeditor/api/v3/index.json]
+
+**11.** Click update then click OK to exit out of the options window.
+
+**12.** In the package source menu choose the name of the source you just created
+
+**13.** Click restore. Some windows will pop-up and just answer "yes" to them.
+
+**14.** Once the packages are downloaded go to the update tab and update all packages
+
+**15.** When the updates are complete go to the installed tab and switch the package
+   source to nuget.org
+
+**16.** If any packages need to be downloaded or updated then do so.
+
+**17.** Rebuild the solution
+
+**18.** In Solution Explorer right click on SkyEditor.ROMEditor.UI.WPF and click on Set as Startup Project
+
+**19.** At the top of the window there are 3 drop-down menus. 
+    Make Sure they say (Debug)(Any Cpu)(SkyEditor.ROMEditor.UI.WPF)
+
+**20.** Build the solution
+
+**21.** Use Windows File Explorer to Navigate to where you put the SkyEditor.ROMEditor folder. From there go to 
+   [\SkyEditor.ROMEditor\SkyEditor.ROMEditor.UI.WPF\bin\Debug] and in the debug folder you will find 2 applications called 
+   [SkyEditor.ROMEditor.UI.WPF.exe]. One of the applications will seemingly do nothing. The other will open 
+   SkyEditor.ROMEditor.
+
+**22.** Congrats! You have built SkyEditor.ROMEditor! If you need more information on how to use the app then go to 
+   4.1 Alpha Usage Wiki Page!
+
+**<FURTHER INSTRUCTIONS COMING SOON!>**
+
